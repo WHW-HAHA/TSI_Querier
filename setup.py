@@ -19,7 +19,7 @@ setuptools.setup(
     author='LiuMao',
     author_email='hanwei_wang_94@outlook.com',
     packages=setuptools.find_packages(),
-    url = '',
+    url = 'https://github.com/WHW-HAHA/WBL_BDP_TSI_Querier',
     license='MIT',
     install_requires=[]
 )

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: WBL-BDP-TSI-Querier
+Version: 0.0.1
+Summary: The querier designed for querying Time Series Insight data from WBL Big Data Platform.
+Home-page: https://github.com/WHW-HAHA/WBL_BDP_TSI_Querier
+Author: LiuMao
+Author-email: hanwei_wang_94@outlook.com
+License: MIT
+Description: WBL_BDP_TSI_QUERIER - A querier to query Time Series Insight data in WBL Big Data Platform
+        
+        
+        Assumptions:
+        * Assuming Python is installed on your system
+        
+        Dependencies:
+        * 
+        
+        Functions:
+        * 
+        
+        Test:
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
