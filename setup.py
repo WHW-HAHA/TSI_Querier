@@ -4,7 +4,7 @@ import os
 import setuptools
 
 setuptools.setup(
-    name='WBL_BDP_TSI_Querier',
+    name='TSI_Querier',
     version='0.0.2',
     scripts=['Python'],
     keywords='',
@@ -19,7 +19,7 @@ setuptools.setup(
     author='LiuMao',
     author_email='hanwei_wang_94@outlook.com',
     packages=setuptools.find_packages(),
-    url = 'https://github.com/WHW-HAHA/WBL_BDP_TSI_Querier',
+    url = 'https://github.com/WHW-HAHA/TSI_Querier',
     license='MIT',
     install_requires=['requests']
 )

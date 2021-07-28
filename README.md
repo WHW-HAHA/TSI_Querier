@@ -1,6 +1,6 @@
-##TSI_QUERIER - A wrapped querier to query data from Azure Time Series Insight  
+## TSI_QUERIER - A wrapped querier to query data from Azure Time Series Insight  
 
-###Assumptions:
+### Assumptions:
 * Assuming Python is installed on your system
 * The following environment fqdn and credentials are known by users
   * environment fqdn of the TSI instance
@@ -8,7 +8,7 @@
   * client id of the service principle 
   * tenant id of the service principle
 
-###Functions:
+### Functions:
 All the functions in the module are designed based on REST API which are documented in TSI official documentation https://docs.microsoft.com/en-us/rest/api/time-series-insights/reference-data-access-overview
 * get_authorization_token(): Send POST request via REST API to get the Azure Access Token
 * query_availability(): Send GET request via REST API to query the availability/search span of time series
@@ -18,7 +18,7 @@ All the functions in the module are designed based on REST API which are documen
 * query_event_by_id(): Send POST request via REST API to get the timestamp and associated values of projected properties for asset with certain ID
 * query_event_by_hierarchy(): Send POST request via REST API to get the timestamp and associated values of projected properties for asset with certain hierarchy by looking for a search string 
 
-###Test:
+### Test:
 To test the module, edit the test.py file, filling in the below variables
 
 Environment fqdn and credentials
