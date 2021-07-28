@@ -1,11 +1,11 @@
 MANIFEST.in
 README.md
+pyproject.toml
 setup.py
-WBL_BDP_TSI_Querier/__init__.py
-WBL_BDP_TSI_Querier/query_test.py
+TSI_Querier/DataQuerier.py
+TSI_Querier/__init__.py
 WBL_BDP_TSI_Querier.egg-info/PKG-INFO
 WBL_BDP_TSI_Querier.egg-info/SOURCES.txt
 WBL_BDP_TSI_Querier.egg-info/dependency_links.txt
+WBL_BDP_TSI_Querier.egg-info/requires.txt
 WBL_BDP_TSI_Querier.egg-info/top_level.txt
-WBL_BDP_TSI_Querier/tsi/DataQuerier.py
-WBL_BDP_TSI_Querier/tsi/__init__.py

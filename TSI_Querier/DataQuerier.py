@@ -8,12 +8,16 @@ class TsiDataQuerier():
     '''
     This class contains the function to query data from TSI
     '''
-    def __init__(self):
+    def __init__(self,
+                 environment_fqdn,
+                 client_secret,
+                 client_id,
+                 tenant_id,):
         self.storType_list = ['warmstore', 'coldstore']
-        self.environment_fqdn = 'eaecab34-790f-4736-a7ad-6e26fb0c3f4e.env.timeseries.azure.com'
-        self.client_secret = '-YnQjBK_5XV~mjZgyoDl6U4j..9h0hPmD3'
-        self.client_id = '2f7a266d-a98e-468d-bf33-8336f820812e'
-        self.tenant_id = '15f996bf-aad1-451c-8d17-9b95d025eafc'
+        self.environment_fqdn = environment_fqdn
+        self.client_secret = client_secret
+        self.client_id = client_id
+        self.tenant_id = tenant_id
         self.api_version = '2020-07-31'
         self.tsi_resource = 'https://api.timeseries.azure.com/'
 
@@ -147,7 +151,7 @@ class TsiDataQuerier():
                                        filter = {}
                                       ):
         '''
-        Send POST request via REST API to get the timestamp and associated values of projected properties for asset with certain hierarchy
+        Send POST request via REST API to get the timestamp and associated values of projected properties for asset with certain hierarchy by looking for a search string
         '''
 
         # Set the projected property

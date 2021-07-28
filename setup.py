@@ -5,7 +5,7 @@ import setuptools
 
 setuptools.setup(
     name='WBL_BDP_TSI_Querier',
-    version='0.0.1',
+    version='0.0.2',
     scripts=['Python'],
     keywords='',
     description='The querier designed for querying Time Series Insight data from WBL Big Data Platform.',
@@ -21,5 +21,5 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     url = 'https://github.com/WHW-HAHA/WBL_BDP_TSI_Querier',
     license='MIT',
-    install_requires=[]
+    install_requires=['requests']
 )
