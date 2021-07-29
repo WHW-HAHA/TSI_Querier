@@ -15,7 +15,7 @@ setuptools.setup(
         )
     ).read(),
     long_description_content_type = "text/markdown",
-    author='LiuMao',
+    author='Hanwei Wang',
     author_email='hanwei_wang_94@outlook.com',
     url = 'https://github.com/WHW-HAHA/TSI_Querier',
     license='MIT',

@@ -2,22 +2,16 @@ import json
 import requests
 import time
 
-# from .ModelPublisher import TsiModelPublisher
-
 class TsiDataQuerier():
     '''
-    This class contains the function to query data from TSI
+    This class contains the function to query data from Azure TSI
     '''
-    def __init__(self,
-                 environment_fqdn,
-                 client_secret,
-                 client_id,
-                 tenant_id,):
+    def __init__(self, environment_variables = {}):
         self.storType_list = ['warmstore', 'coldstore']
-        self.environment_fqdn = environment_fqdn
-        self.client_secret = client_secret
-        self.client_id = client_id
-        self.tenant_id = tenant_id
+        self.environment_fqdn = environment_variables['environment_fqdn']
+        self.client_secret = environment_variables['client_secret']
+        self.client_id = environment_variables['client_id']
+        self.tenant_id = environment_variables['tenant_id']
         self.api_version = '2020-07-31'
         self.tsi_resource = 'https://api.timeseries.azure.com/'
 
@@ -145,7 +139,7 @@ class TsiDataQuerier():
                                        search_string = '',
                                        hierarchyName = '',
                                        recursive = 'true',
-                                       hilight = 'true',
+                                       highlight = 'true',
                                        continuationToken = '',
                                        searchSpan = {'from': None, 'to': None},
                                        filter = {}
@@ -161,7 +155,7 @@ class TsiDataQuerier():
         res = self.query_instance_search(search_string=search_string,
                                          hierarchyName=hierarchyName,
                                          recursive=recursive,
-                                         hilight=hilight,
+                                         highlight=highlight,
                                          continuationToken=continuationToken)
 
         instances_content = res.json()['instances']['hits']
@@ -176,7 +170,7 @@ class TsiDataQuerier():
                     res = self.query_instance_search(search_string=search_string,
                                                         hierarchyName=hierarchyName,
                                                         recursive='true',
-                                                        hilight='true',
+                                                        highlight='true',
                                                         continuationToken=continuationToken)
                     instance_content = res['instances']['hits']
                     for instance in instance_content:
@@ -252,7 +246,7 @@ class TsiDataQuerier():
                               search_string = '',
                               hierarchyName = '',
                               recursive = 'true',
-                              hilight = 'true',
+                              highlight = 'true',
                               continuationToken = ''):
         """
         Query time series instances based on instance attributes
@@ -275,7 +269,7 @@ class TsiDataQuerier():
                     "sort": {
                         "by": "DisplayName"
                     },
-                    "highlights": hilight,
+                    "highlights": highlight,
                     "pageSize": 100}
                 }
         res = requests.post(url = url,
@@ -307,7 +301,7 @@ class TsiDataQuerier():
                    'Content-Type': 'application/json'}
         params = {'api-version': self.api_version}
         res = requests.get(url=url,
-                            headers=headers,
-                            params=params)
+                           headers=headers,
+                           params=params)
 
         return res
