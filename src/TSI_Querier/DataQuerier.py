@@ -129,7 +129,7 @@ class TsiDataQuerier():
                                 data = json.dumps(body))
             if res.status_code == 200:
                 out_json = json.dumps({timeSeriesId[0]: res.json()})
-                print(f'Successfully query instance: {timeSeriesId[0]} \n')
+                print(f'Successfully query instance: {timeSeriesId[0]} \n ----- \n')
             else:
                 return res.status_code
         return out_json
@@ -219,7 +219,7 @@ class TsiDataQuerier():
                 out_dict[instance_id] = res.json()
                 print(f'instance_id:{instance_id}\t', res.json(), '\n')
             json_out = json.dumps(out_dict)
-            print('Successfully query all instances \n')
+            print('Successfully query all instances \n ----- \n')
         return json_out
 
     def query_instance(self, continuationToken = ''):
@@ -252,7 +252,7 @@ class TsiDataQuerier():
         Query time series instances based on instance attributes
         If the amount of instances is over 100(maximum 100 per page), the continuationToken is needed to retrieve the next page
         """
-        print(f'Query instance by searching keyword: {search_string}')
+        print(f'Query instance by searching keyword: {search_string}\n -----\n')
         url = f"https://{self.environment_fqdn}/timeseries/instances/search?"
         if not continuationToken:
             headers = {'Authorization': self.authorization_token,

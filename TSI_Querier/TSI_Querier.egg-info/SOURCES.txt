@@ -1,8 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-setup.py
-TSI_QUERIER/TSI_Querier.egg-info/PKG-INFO
-TSI_QUERIER/TSI_Querier.egg-info/SOURCES.txt
-TSI_QUERIER/TSI_Querier.egg-info/dependency_links.txt
-TSI_QUERIER/TSI_Querier.egg-info/top_level.txt

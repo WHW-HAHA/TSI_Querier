@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: TSI-Querier
-Version: 0.1.1
+Version: 0.2.1
 Summary: The querier designed for querying Time Series Insight data from WBL Big Data Platform.
 Home-page: https://github.com/WHW-HAHA/TSI_Querier
 Author: Hanwei Wang
@@ -68,7 +68,7 @@ All the functions in the module are designed based on REST API which are documen
     * search_string
       * type: string
       * nullable: true
-    * hierarchyNameï¼š
+    * hierarchyName:
       * type: string
       * nullable: false
     * recursive:
@@ -104,7 +104,7 @@ All the functions in the module are designed based on REST API which are documen
     * search_string
       * type: string
       * nullable: true
-    * hierarchyNameï¼š
+    * hierarchyName:
       * type: string
       * nullable: false
     * recursive:

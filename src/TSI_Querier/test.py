@@ -69,10 +69,10 @@ def tsi_querier_test(environment_variables = {},
     print(f'Status code query Types  : {res_type.status_code}\n')
 
     res_hierarchy = querier.query_hierarchy()
-    print(f'Hierarchies: {res_hierarchy.status_code} \n')
+    print(f'Status code Hierarchies: {res_hierarchy.status_code} \n')
 
     res_instance = querier.query_instance()
-    print(f'Instances: {res_instance.status_code} \n')
+    print(f'Status code Instances: {res_instance.status_code} \n ----- \n')
 
     out = querier.query_event_by_hierarchy(storeType=storage_type,
                                            search_string=search_string,

@@ -5,12 +5,12 @@ import setuptools
 
 setuptools.setup(
     name='TSI_Querier',
-    version='0.1.1',
+    version='0.2.1',
     keywords='',
     description='The querier designed for querying Time Series Insight data from WBL Big Data Platform.',
     long_description=open(
         os.path.join(
-            os.path.dirname(__file__),
+            os.path.dirname(os.path.dirname(__file__)),
             'README.md'
         )
     ).read(),
@@ -25,6 +25,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
-    package_dir={"": "TSI_QUERIER"},
-    packages=setuptools.find_packages(where="TSI_QUERIER"),
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
 )

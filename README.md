@@ -52,7 +52,7 @@ All the functions in the module are designed based on REST API which are documen
     * search_string
       * type: string
       * nullable: true
-    * hierarchyName：
+    * hierarchyName:
       * type: string
       * nullable: false
     * recursive:
@@ -88,7 +88,7 @@ All the functions in the module are designed based on REST API which are documen
     * search_string
       * type: string
       * nullable: true
-    * hierarchyName：
+    * hierarchyName:
       * type: string
       * nullable: false
     * recursive:
