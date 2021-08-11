@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: TSI-Querier
-Version: 0.0.5
+Version: 0.1.1
 Summary: The querier designed for querying Time Series Insight data from WBL Big Data Platform.
 Home-page: https://github.com/WHW-HAHA/TSI_Querier
 Author: Hanwei Wang

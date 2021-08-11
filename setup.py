@@ -5,7 +5,7 @@ import setuptools
 
 setuptools.setup(
     name='TSI_Querier',
-    version='0.1.0',
+    version='0.1.1',
     keywords='',
     description='The querier designed for querying Time Series Insight data from WBL Big Data Platform.',
     long_description=open(
