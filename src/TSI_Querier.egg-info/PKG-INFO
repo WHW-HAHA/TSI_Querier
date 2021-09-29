@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: TSI-Querier
-Version: 0.2.1
-Summary: The querier designed for querying Time Series Insight data from WBL Big Data Platform.
+Version: 0.3.1
+Summary: The querier designed for querying Time Series Insight data.
 Home-page: https://github.com/WHW-HAHA/TSI_Querier
 Author: Hanwei Wang
 Author-email: hanwei_wang_94@outlook.com
@@ -10,37 +10,43 @@ Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
-Requires-Python: >=3.6
+Requires-Python: >=3.0
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
 ## TSI_QUERIER - A querier to query data from Azure Time Series Insight  
 
 ### Assumptions:
-* Assuming Python(>=3.6) is installed in your system
-* The following environment fqdn and credentials are known by users
+* Assuming Python(>=3.0) is installed in your system
+* The following environment fqdn and credentials are known by users to instantiate the querier
   * environment fqdn of the TSI instance
-  * client secret of the service principle
-  * client id of the service principle 
-  * tenant id of the service principle
+  * client secret of the service principle that mounted with TSI
+  * client id of the service principle that mounted with TSI
+  * tenant id of the service principle that mounted with TSI
 
 ### Functions:
-All the functions in the module are designed based on REST API which are documented in TSI official documentation https://docs.microsoft.com/en-us/rest/api/time-series-insights/reference-data-access-overview
+Some of the functions in the module are designed based on REST API which are documented in TSI official documentation https://docs.microsoft.com/en-us/rest/api/time-series-insights/reference-data-access-overview
+* create_logger(stream_level, file_level): The function to stream logs of the queries and save the log info in 'output.log' 
+  * Parameters:
+  Sets the threshold for this logger to level. Logging messages which are less severe than level will be ignored
+    * stream_level: 'INFO', 'WARNING', 'CRITICAL' 
+    * file_level: 'INFO', 'WARNING', 'CRITICAL'
+    
 * get_authorization_token(): Send POST request via REST API to get the Azure Access Token
   * Return:
-    * json type response
+    * Response
 
 * query_availability(): Send GET request via REST API to query the availability/search span of time series
   * Return:
-    * json type response
-  
-* query_type(): Query available hierarchies from TSI
+    * Response
+      
+* query_hierarchy(): Query available hierarchies from TSI
   * Return:
-    * json type response
+    * Response
   
 * query_type(): Query available types from TSI
   * Return:
-    * json type response
+    * Response
   
 * query_event_schema(storeType, searchSpan): Send POST request via REST API to get event schema.
   * Parameters:
@@ -53,17 +59,13 @@ All the functions in the module are designed based on REST API which are documen
       * value: searchSpan = {'from': 'yyyy-mm-dd hh-mm-ss' , 'to': 'yyyy-mm-dd hh-mm-ss'}
       * nullable: false
   * Return:
-    * json type response
+    * Response
 
-* query_instance(continuationToken): Query all the available instances from TSI. If the amount of instances is over 100(maximum 100 per page), the continuationToken is needed to retrieve the next page
-  * Parameter:
-    * continuationToken
-      * type: string
-      * nullable: true
+* query_all_instances(continuationToken): Query all the available instances from TSI.
   * Return:
     * json type response
 
-* query_instance_search(search_string, hierarchyName, recursive, highlights, continuationToken):  Query time series instances based on instance attributes. If the amount of instances is over 100(maximum 100 per page), the continuationToken is needed to retrieve the next page
+* query_instance_search(search_string, hierarchyName):  Query time series instances based on instance attributes. If the amount of instances is over 100(maximum 100 per page), the continuationToken is needed to retrieve the next page
   * Parameters:
     * search_string
       * type: string
@@ -71,13 +73,6 @@ All the functions in the module are designed based on REST API which are documen
     * hierarchyName:
       * type: string
       * nullable: false
-    * recursive:
-      * type: string
-      * value: 'true' or 'false'
-      * nullable: true
-    * continuationToken
-      * type: string
-      * nullable: true
   * Return:
     * json type response
 
@@ -99,7 +94,8 @@ All the functions in the module are designed based on REST API which are documen
       * nullable: true
   * Return:
     * json type response    
-* query_event_by_hierarchy(search_string, hierarchyName, recursive, highlight, continuationToken): Send POST request via REST API to get the timestamp and associated values of projected properties for asset with certain hierarchy by looking for a search string
+
+* query_event_by_hierarchy(search_string, hierarchyName): Send POST request via REST API to get the timestamp and associated values of projected properties for asset with certain hierarchy by looking for a search string
   * Parameters:
     * search_string
       * type: string
@@ -107,17 +103,6 @@ All the functions in the module are designed based on REST API which are documen
     * hierarchyName:
       * type: string
       * nullable: false
-    * recursive:
-      * type: string
-      * value: 'true' or 'false'
-      * nullable: true
-    * highlight:
-      * type: string
-      * value: 'true' or 'false'
-      * nullable: true
-    * continuationToken
-      * type: string
-      * nullable: true
   * Return:
     * json type response
     
@@ -146,10 +131,11 @@ The hierarchy name of the which the instance is nested in
 * hierarchyName = 'WBL Asset Hierarchies -  5 layers'
 
 Run the testing scripts in IDE or console, the test.py will execute following functions in order
+* TsiDataQuerier.create_logger()
 * TsiDataQuerier.get_authorization_token()
 * TsiDataQuerier.query_type()
 * TsiDataQuerier.query_hierarchy()
-* TsiDataQuerier.query_instance()
+* TsiDataQuerier.query_all_instances()
 * TsiDataQuerier.query_event_by_hierarchy()
 * TsiDataQuerier.query_event_by_id()
 
@@ -159,25 +145,29 @@ To test the module, replace the empty string with correct strings and execute th
 
 ```Python
 from TSI_Querier import test
+from TSI_Querier.DataQuerier import TsiDataQuerier
 
 # fill in environment parameters
-if __name__ == '__main__':    
-    environment_variables = {'environment_fqdn': '',
-                             'client_secret': '',
+if __name__ == '__main__':
+    environment_variables = {'environment_fqdn':'',
+                             'client_secret':'',
                              'client_id':'' ,
                              'tenant_id':'' }
+
+    querier = TsiDataQuerier(environment_variables=environment_variables)
     
     # fill in query parameters
-    query_variables = {'time_series_id':[''],
-                       'start_time':'',
-                       'end_time':'',
+    query_variables = {'storage_type': 'coldstore',
+                       'time_series_id':['',],
+                       'start_time':'2020-03-28 00:00:00',
+                       'end_time':'2021-03-28 01:00:00',
                        'filter':{"tsx": "($event.value.Double != null)"},
                        'search_string':'',
                        'hierarchyName':''}
 
     # run test function
     test.tsi_querier_test(environment_variables = environment_variables,
-                          query_variables = query_variables)
+                      query_variables = query_variables)
 ```
 #### Use
 Instantiate the class to use the above mentioned functions
@@ -191,8 +181,15 @@ environment_variables = {'environment_fqdn': '',
                          'tenant_id':'' }
 # instantiate the querier
 querier = TsiDataQuerier(environment_variables=environment_variables)
-# run query functions e.g,
+
+# initiate the logger
+querier.create_logger()
+
+# get the ADD token
 response = querier.get_authorization_token()
+
+# run query functions e.g,
+response = querier.query_all_instances()
 ```
 
 

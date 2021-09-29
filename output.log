@@ -1,0 +1,90 @@
+2021-09-09 18:15:31,244 - TSI_Querier.DataQuerier - INFO - Status code ADD token: 200
+2021-09-09 18:15:31,454 - TSI_Querier.DataQuerier - INFO - Status code query type: 200
+2021-09-09 18:15:31,554 - TSI_Querier.DataQuerier - INFO - Status code query hierarchy: 200
+2021-09-09 18:15:31,962 - TSI_Querier.DataQuerier - INFO - Status code query all instance: 200
+2021-09-09 18:15:31,962 - TSI_Querier.DataQuerier - INFO - Page 1
+2021-09-09 18:15:32,100 - TSI_Querier.DataQuerier - INFO - page 2
+2021-09-09 18:15:32,198 - TSI_Querier.DataQuerier - INFO - page 3
+2021-09-09 18:15:32,198 - TSI_Querier.DataQuerier - INFO - 1353 intances in 3 pages
+2021-09-09 18:15:33,673 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.RbkOut, status_code: 200
+2021-09-09 18:15:33,787 - TSI_Querier.DataQuerier - INFO - searching_keyword: Area32Transportlijn1VerpompenVPrg07, status_code: 200
+2021-09-09 18:15:33,788 - TSI_Querier.DataQuerier - INFO - ContinuationToken is not needed, the amount of outcome instance is less than 100.
+2021-09-09 18:15:35,065 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPLT070001.PV, status_code:200
+2021-09-09 18:15:36,465 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070010.PV, status_code:200
+2021-09-09 18:15:37,811 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070010.UserAna1, status_code:200
+2021-09-09 18:15:39,011 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.FbkFwdOut, status_code:200
+2021-09-09 18:15:40,219 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.UserAna1, status_code:200
+2021-09-09 18:15:41,634 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.RbkOut, status_code:200
+2021-09-09 18:15:43,019 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070020.PV, status_code:200
+2021-09-09 18:15:44,277 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070020.UserAna1, status_code:200
+2021-09-09 18:15:45,515 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.FbkFwdOut, status_code:200
+2021-09-09 18:15:46,863 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.UserAna1, status_code:200
+2021-09-09 18:15:48,076 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.RbkOut, status_code:200
+2021-09-09 18:15:49,613 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070950.PV, status_code:200
+2021-09-09 18:15:50,859 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070950.UserAna1, status_code:200
+2021-09-09 18:15:52,096 - TSI_Querier.DataQuerier - INFO - Instance_id: OSx66::32/1/VP/rg-07/rg-07_P02.Gewenst_Debiet, status_code:200
+2021-09-09 18:15:53,366 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPPT070051.PV, status_code:200
+2021-09-09 19:10:26,623 - TSI_Querier.DataQuerier - INFO - Status code ADD token: 200
+2021-09-09 19:10:26,819 - TSI_Querier.DataQuerier - INFO - Status code query type: 200
+2021-09-09 19:10:26,911 - TSI_Querier.DataQuerier - INFO - Status code query hierarchy: 200
+2021-09-09 19:10:27,361 - TSI_Querier.DataQuerier - INFO - Status code query all instance: 200
+2021-09-09 19:10:27,361 - TSI_Querier.DataQuerier - INFO - Page 1
+2021-09-09 19:10:27,494 - TSI_Querier.DataQuerier - INFO - page 2
+2021-09-09 19:10:27,584 - TSI_Querier.DataQuerier - INFO - page 3
+2021-09-09 19:10:27,584 - TSI_Querier.DataQuerier - INFO - 1353 intances in 3 pages
+2021-09-09 19:10:29,805 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.RbkOut, status_code: 200
+2021-09-09 19:10:29,916 - TSI_Querier.DataQuerier - INFO - searching_keyword: Area32Transportlijn1VerpompenVPrg07, status_code: 200
+2021-09-09 19:10:29,916 - TSI_Querier.DataQuerier - INFO - ContinuationToken is not needed, the amount of outcome instance is less than 100.
+2021-09-09 19:10:31,369 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPLT070001.PV, status_code:200
+2021-09-09 19:10:33,373 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070010.PV, status_code:200
+2021-09-09 19:10:34,728 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070010.UserAna1, status_code:200
+2021-09-09 19:10:36,052 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.FbkFwdOut, status_code:200
+2021-09-09 19:10:37,268 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.UserAna1, status_code:200
+2021-09-09 19:10:38,884 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.RbkOut, status_code:200
+2021-09-09 19:10:40,221 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070020.PV, status_code:200
+2021-09-09 19:10:41,533 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070020.UserAna1, status_code:200
+2021-09-09 19:10:42,695 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.FbkFwdOut, status_code:200
+2021-09-09 19:10:44,076 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.UserAna1, status_code:200
+2021-09-09 19:10:45,376 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.RbkOut, status_code:200
+2021-09-09 19:10:47,131 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070950.PV, status_code:200
+2021-09-09 19:10:48,466 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070950.UserAna1, status_code:200
+2021-09-09 19:10:49,818 - TSI_Querier.DataQuerier - INFO - Instance_id: OSx66::32/1/VP/rg-07/rg-07_P02.Gewenst_Debiet, status_code:200
+2021-09-09 19:10:51,175 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPPT070051.PV, status_code:200
+2021-09-09 21:19:02,290 - TSI_Querier.DataQuerier - INFO - Status code ADD token: 200
+2021-09-09 21:19:02,501 - TSI_Querier.DataQuerier - INFO - Status code query type: 200
+2021-09-09 21:19:02,602 - TSI_Querier.DataQuerier - INFO - Status code query hierarchy: 200
+2021-09-09 21:19:03,142 - TSI_Querier.DataQuerier - INFO - Status code query all instance: 200
+2021-09-09 21:19:03,142 - TSI_Querier.DataQuerier - INFO - Page 1
+2021-09-09 21:19:03,279 - TSI_Querier.DataQuerier - INFO - page 2
+2021-09-09 21:19:03,376 - TSI_Querier.DataQuerier - INFO - page 3
+2021-09-09 21:19:03,376 - TSI_Querier.DataQuerier - INFO - 1353 intances in 3 pages
+2021-09-09 21:19:05,813 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.RbkOut, status_code: 200
+2021-09-09 21:19:05,944 - TSI_Querier.DataQuerier - INFO - searching_keyword: Area32Transportlijn1VerpompenVPrg07, status_code: 200
+2021-09-09 21:19:05,945 - TSI_Querier.DataQuerier - INFO - ContinuationToken is not needed, the amount of outcome instance is less than 100.
+2021-09-09 21:19:07,359 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPLT070001.PV, status_code:200
+2021-09-09 21:19:09,646 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070010.PV, status_code:200
+2021-09-09 21:19:11,001 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070010.UserAna1, status_code:200
+2021-09-09 21:19:12,360 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.FbkFwdOut, status_code:200
+2021-09-09 21:19:13,776 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.UserAna1, status_code:200
+2021-09-09 21:19:15,284 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.RbkOut, status_code:200
+2021-09-09 21:19:16,720 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070020.PV, status_code:200
+2021-09-09 21:19:18,099 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070020.UserAna1, status_code:200
+2021-09-09 21:19:19,462 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.FbkFwdOut, status_code:200
+2021-09-09 21:19:20,862 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.UserAna1, status_code:200
+2021-09-09 21:19:22,308 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07002.RbkOut, status_code:200
+2021-09-09 21:19:24,357 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070950.PV, status_code:200
+2021-09-09 21:19:25,798 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPFT070950.UserAna1, status_code:200
+2021-09-09 21:19:27,143 - TSI_Querier.DataQuerier - INFO - Instance_id: OSx66::32/1/VP/rg-07/rg-07_P02.Gewenst_Debiet, status_code:200
+2021-09-09 21:19:28,520 - TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPPT070051.PV, status_code:200
+2021-09-09 21:34:54,326 - TSI_Querier.DataQuerier - INFO - Status code ADD token: 200
+2021-09-10 15:55:24,130 - src.TSI_Querier.DataQuerier - INFO - Status code ADD token: 200
+2021-09-10 15:55:24,298 - src.TSI_Querier.DataQuerier - INFO - Status code query type: 200
+2021-09-10 15:55:24,393 - src.TSI_Querier.DataQuerier - INFO - Status code query hierarchy: 200
+2021-09-10 15:55:24,775 - src.TSI_Querier.DataQuerier - INFO - Status code query all instance: 200
+2021-09-10 15:55:24,776 - src.TSI_Querier.DataQuerier - INFO - Page 1
+2021-09-10 15:55:24,906 - src.TSI_Querier.DataQuerier - INFO - page 2
+2021-09-10 15:55:25,005 - src.TSI_Querier.DataQuerier - INFO - page 3
+2021-09-10 15:55:25,005 - src.TSI_Querier.DataQuerier - INFO - 1353 intances in 3 pages
+2021-09-10 15:55:26,510 - src.TSI_Querier.DataQuerier - INFO - Instance_id: OSX66::32/1/VP/rg-07/p--/321VPp--07001.RbkOut, status_code: 200
+2021-09-10 15:55:26,639 - src.TSI_Querier.DataQuerier - INFO - searching_keyword: Area32Transportlijn1VerpompenVPrg07, status_code: 200
+2021-09-10 15:55:26,639 - src.TSI_Querier.DataQuerier - INFO - ContinuationToken is not needed, the amount of outcome instance is less than 100.
